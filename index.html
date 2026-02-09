@@ -19,6 +19,12 @@
     polaris-chip {
       margin: 16px;
     }
+
+    /* ✅ 추가된 부분: my-card 가로 정렬 (inline-block) */
+    my-card {
+      display: inline-block;
+      margin: 16px;
+    }
   </style>
   <title>polaris-chip / my-card</title>
 </head>
@@ -32,7 +38,31 @@
   <polaris-chip title="Grants and donations"></polaris-chip>
 
   <h1>my-card</h1>
-  <my-card></my-card>
+
+  <my-card title = "Liverpool FC" 
+    image = "https://upload.wikimedia.org/wikipedia/en/0/0c/Liverpool_FC.svg"
+    alt = "Liverpool FC crest">
+  </my-card>
+
+  <my-card title = "FC Barcelona" 
+    image = "https://upload.wikimedia.org/wikipedia/en/4/47/FC_Barcelona_%28crest%29.svg"
+    alt = "FC Barcelona crest">
+  </my-card>
+
+  <my-card title = "Real Madrid" 
+    image = "https://upload.wikimedia.org/wikipedia/en/5/56/Real_Madrid_CF.svg"
+    alt = "Real Madrid crest">
+  </my-card>
+
+  <my-card title = "Paris Saint-Germain" 
+    image = "https://upload.wikimedia.org/wikipedia/en/a/a7/Paris_Saint-Germain_F.C..svg"
+    alt = "PSG crest">
+  </my-card>
+
+  <my-card title = "AC Milan" 
+    image = "https://upload.wikimedia.org/wikipedia/commons/d/d0/Logo_of_AC_Milan.svg"
+    alt = "AC Milan crest">
+  </my-card>
 
   <!-- this is what is bringing in the definition for this tag -->
   <script type="module" src="./src/polaris-chip.js"></script>
