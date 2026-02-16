@@ -16,21 +16,26 @@
       font-family: sans-serif;
       background-color: #ededed;
     }
+
     polaris-chip {
       margin: 16px;
     }
 
     my-card {
-      display: inline-block;
+      --my-card-background-color: white;
       margin: 16px;
     }
+
+    my-card[fancy] {
+      --my-card-fancy-bg: #9CD1DB;
+    }
   </style>
+
   <title>polaris-chip / my-card</title>
 </head>
 
 <body>
   <h1>polaris-chip</h1>
-  <!-- this is going to do whatever the tag's defaults are -->
   <polaris-chip title="News of Record" link="https://psu.edu/"></polaris-chip>
   <polaris-chip title="Faculty and Staff"></polaris-chip>
   <polaris-chip title="Sports are the only thing that matter"></polaris-chip>
@@ -38,32 +43,41 @@
 
   <h1>my-card</h1>
 
-  <my-card title = "Liverpool FC" 
-    image = "https://upload.wikimedia.org/wikipedia/en/0/0c/Liverpool_FC.svg"
-    alt = "Liverpool FC crest">
+  <my-card fancy
+    title="Liverpool FC"
+    image="https://upload.wikimedia.org/wikipedia/en/0/0c/Liverpool_FC.svg"
+    alt="Liverpool FC crest">
+    <p class="description">A football club with a rich history and passionate supporters.</p>
   </my-card>
 
-  <my-card title = "FC Barcelona" 
-    image = "https://upload.wikimedia.org/wikipedia/en/4/47/FC_Barcelona_%28crest%29.svg"
-    alt = "FC Barcelona crest">
+  <my-card
+    title="FC Barcelona"
+    image="https://upload.wikimedia.org/wikipedia/en/4/47/FC_Barcelona_%28crest%29.svg"
+    alt="FC Barcelona crest">
+    <p class="description">A club known for its style of play and a legendary academy.</p>
   </my-card>
 
-  <my-card title = "Real Madrid" 
-    image = "https://upload.wikimedia.org/wikipedia/en/5/56/Real_Madrid_CF.svg"
-    alt = "Real Madrid crest">
+  <my-card
+    title="Real Madrid"
+    image="https://upload.wikimedia.org/wikipedia/en/5/56/Real_Madrid_CF.svg"
+    alt="Real Madrid crest">
+    <p class="description">A historic club with massive European success and global fandom.</p>
   </my-card>
 
-  <my-card title = "Paris Saint-Germain" 
-    image = "https://upload.wikimedia.org/wikipedia/en/a/a7/Paris_Saint-Germain_F.C..svg"
-    alt = "PSG crest">
+  <my-card fancy
+    title="PSG"
+    image="https://upload.wikimedia.org/wikipedia/en/a/a7/Paris_Saint-Germain_F.C..svg"
+    alt="PSG crest">
+    <p class="description">A modern powerhouse with star players and Paris identity.</p>
   </my-card>
 
-  <my-card title = "AC Milan" 
-    image = "https://upload.wikimedia.org/wikipedia/commons/d/d0/Logo_of_AC_Milan.svg"
-    alt = "AC Milan crest">
+  <my-card
+    title="AC Milan"
+    image="https://upload.wikimedia.org/wikipedia/commons/d/d0/Logo_of_AC_Milan.svg"
+    alt="AC Milan crest">
+    <p class="description">An Italian giant with deep Champions League tradition.</p>
   </my-card>
 
-  <!-- this is what is bringing in the definition for this tag -->
   <script type="module" src="./src/polaris-chip.js"></script>
   <script type="module" src="./src/my-card.js"></script>
 </body>
